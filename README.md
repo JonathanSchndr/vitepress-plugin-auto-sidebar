@@ -26,7 +26,7 @@ npm i vitepress-plugin-auto-sidebar # npm
 
 .vitepress/config.js
 ```javascript
-import { getSidebar } from vitepress-plugin-auto-sidebar
+import { getSidebar } from 'vitepress-plugin-auto-sidebar'
 
 export default {
   themeConfig: {
