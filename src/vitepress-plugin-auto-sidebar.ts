@@ -5,11 +5,11 @@ import {
   Options
 } from './vitepress-plugin-auto-sidebar.d';
 
-export const getSidebar = (options: Options) => {
-  options.contentRoot = options.contentRoot ?? '/';
-  options.contentDirs = options.contentDirs ?? null;
-  options.collapsible = options.collapsible ?? true;
-  options.collapsed = options.collapsed ?? true;
+export const getSidebar = (options: Options = {}) => {
+  options.contentRoot = options?.contentRoot ?? '/';
+  options.contentDirs = options?.contentDirs ?? null;
+  options.collapsible = options?.collapsible ?? true;
+  options.collapsed = options?.collapsed ?? true;
 
 	options.contentRoot = path.join(process.cwd(), options.contentRoot)
 	const dir = fs.readdirSync(options.contentRoot).filter((file: string) => (options.contentDirs === null || options.contentDirs?.indexOf(file) !== -1) && fs.statSync(path.join(options.contentRoot, file)).isDirectory());
