@@ -3,7 +3,7 @@ import dts from 'vite-plugin-dts';
 export default {
   build: {
     minify: true,
-    sourcemap: true,
+    sourcemap: false,
     emptyOutDir: false,
     lib: {
       formats: ['es', 'cjs', 'umd'],
