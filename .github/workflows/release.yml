@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: |
+            VitePress Plugin Auto Sidebar ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+  publish-npm:
+    name: Publish to NPM
+    runs-on: ubuntu-latest
+    # Skip this step in forks
+    if: ${{ github.repository_owner == 'JonathanSchndr' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install && npm run build
+
+      - name: Publish packages to NPM
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+          npm -r publish --access=public --no-git-checks

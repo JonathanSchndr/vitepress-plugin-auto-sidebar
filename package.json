@@ -1,0 +1,41 @@
+{
+  "name": "vitepress-plugin-auto-sidebar",
+  "repository": "git://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar.git",
+  "version": "1.0.0",
+  "description": "Generate the VitePress sidebar through the folder structure.",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vitepress-plugin-auto-sidebar.umd.js",
+  "types": "./dist/vitepress-plugin-auto-sidebar.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vitepress-plugin-auto-sidebar.mjs",
+      "require": "./dist/vitepress-plugin-auto-sidebar.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite & vite build --watch",
+    "serve": "vite",
+    "build": "vite build"
+  },
+  "author": "Jonathan Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/issues"
+  },
+  "homepage": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/node": "^18.7.18",
+    "eslint": "^8.23.1",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.5.0"
+  }
+}
