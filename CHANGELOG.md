@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.0.1 - v1.0.3
+## v1.0.4 - v1.0.1
 
 * Optimizations & bug fixing
 

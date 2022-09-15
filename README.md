@@ -8,7 +8,7 @@
 
 > Generate the VitePress sidebar through the folder structure.
 
-- [✨ &nbsp;Release Notes](https://github.com/JonathanSchndr/github-issue-widget/releases)
+- [✨ &nbsp;Release Notes](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/releases)
 
 ## Features
 
@@ -54,9 +54,9 @@ Copyright (c) 2022 Jonathan Schneider
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/github-issue-widget/latest.svg
-[npm-version-href]: https://npmjs.com/package/github-issue-widget
-[npm-downloads-src]: https://img.shields.io/npm/dt/github-issue-widget.svg
-[npm-downloads-href]: https://npmjs.com/package/github-issue-widget
-[license-src]: https://img.shields.io/npm/l/github-issue-widget.svg
-[license-href]: https://npmjs.com/package/github-issue-widget
+[npm-version-src]: https://img.shields.io/npm/v/vitepress-plugin-auto-sidebar/latest.svg
+[npm-version-href]: https://npmjs.com/package/vitepress-plugin-auto-sidebar
+[npm-downloads-src]: https://img.shields.io/npm/dt/vitepress-plugin-auto-sidebar.svg
+[npm-downloads-href]: https://npmjs.com/package/vitepress-plugin-auto-sidebar
+[license-src]: https://img.shields.io/npm/l/vitepress-plugin-auto-sidebar.svg
+[license-href]: https://npmjs.com/package/vitepress-plugin-auto-sidebar
