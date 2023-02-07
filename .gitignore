@@ -1,5 +1,3 @@
-.DS_Store
-
 # Logs
 logs
 *.log
@@ -83,6 +81,7 @@ typings/
 # Nuxt.js build / generate output
 .nuxt
 dist
+out
 
 # Gatsby files
 .cache/
@@ -104,3 +103,5 @@ dist
 
 # TernJS port file
 .tern-port
+
+.idea

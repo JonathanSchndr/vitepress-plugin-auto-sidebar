@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.6
+
+* update dev dependencies
+* added playground
+* restructred code
+
 ## v1.0.5
 
 * add defaults check
