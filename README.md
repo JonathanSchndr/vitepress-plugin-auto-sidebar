@@ -30,7 +30,14 @@ import { getSidebar } from 'vitepress-plugin-auto-sidebar'
 
 export default {
   themeConfig: {
-    sidebar: getSidebar({ contentRoot: '/', contentDirs: ['team'], collapsible: true, collapsed: true })
+    sidebar: [
+      getSidebar({
+        contentRoot: "/",
+        contentDirs: ['team'],
+        collapsible: true,
+        collapsed: true,
+      }),
+    ],
   }
 }
 ```
