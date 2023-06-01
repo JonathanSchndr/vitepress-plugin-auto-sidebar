@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.7
+
+* update dependencies
+
 ## v1.0.6
 
 * update dev dependencies
