@@ -46,6 +46,8 @@ export default {
 * collapsed – Default: true
   > Boolean whether the first level items are already expanded after loading
 
+**Tips：** If you want to ignore a file, name the `.md` file with an underscore ( `_` ).
+
 
 ## License
 
