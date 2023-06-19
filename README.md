@@ -39,8 +39,8 @@ export default {
 
 * contentRoot – Default: '/'
   > String Root of your VitePress Docs
-* contentDirs – Default: null
-  > Array of indexable contentRoot dirs, if you want to include seperatly - null mean all dirs in the contentRoot are indexed
+* contentDirs – Default: ['/']
+  > Array of indexable contentRoot dirs, if you want to include seperatly
 * collapsible – Default: true
   > Boolean whether the first level can be unfolded
 * collapsed – Default: true

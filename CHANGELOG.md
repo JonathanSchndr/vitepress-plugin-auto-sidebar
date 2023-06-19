@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.1.0
+
+* Ignore the underscore file (by @ZhongxuYang)
+* Fixed multi-level navbar can not render (by @ZhongxuYang)
+
+* update dependencies
+
 ## v1.0.7
 
 * update dependencies
