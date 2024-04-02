@@ -40,11 +40,13 @@ export default {
 * contentRoot – Default: '/'
   > String Root of your VitePress Docs
 * contentDirs – Default: ['/']
-  > Array of indexable contentRoot dirs, if you want to include seperatly
+  > Array of indexable contentRoot dirs, if you want to include seperatly. Accepts `string[]` or `{ path: string, title?: string }[]`
 * collapsible – Default: true
   > Boolean whether the first level can be unfolded
 * collapsed – Default: true
   > Boolean whether the first level items are already expanded after loading
+* useFrontMatter - Default: false
+  > Boolean whether use front-matter for title of items
 
 **Tips：** If you want to ignore a file, name the `.md` file with an underscore ( `_` ).
 
