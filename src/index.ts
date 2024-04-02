@@ -16,7 +16,7 @@ function getSidebarItems(dir: string[] | ContentDir[], currentRoot: string | und
       if (fs.statSync(childDir).isDirectory()) {
         const items = getSidebarItems(fs.readdirSync(childDir), childDir, root, options)
         const fileName = e.split('/').pop() ?? ''
-        
+
         let title: string;
         if (typeof entry !== 'string' && entry.title) {
           title = entry.title
@@ -33,7 +33,7 @@ function getSidebarItems(dir: string[] | ContentDir[], currentRoot: string | und
       } else if (e.endsWith('.md') && e[0] !== '_') {
         let title: string | undefined;
 
-        if (options.useFrontMatter) {
+        if (options.useFrontmatter) {
           const fm = frontMatter<{title: string}>(fs.readFileSync(path.resolve(currentRoot ?? '/', e), {encoding: 'utf-8'}));
           if (fm) {
             title = fm.attributes.title;
@@ -55,7 +55,7 @@ export function getSidebar(options: Options = {}) {
   options.contentDirs = options?.contentDirs?.length ? options.contentDirs : ['/'];
   options.collapsible = options?.collapsible ?? true;
   options.collapsed = options?.collapsed ?? true;
-  options.useFrontMatter = options?.useFrontMatter ?? false;
+  options.useFrontmatter = options?.useFrontmatter ?? false;
 
 	options.contentRoot = path.join(process.cwd(), options.contentRoot)
 

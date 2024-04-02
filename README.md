@@ -45,7 +45,7 @@ export default {
   > Boolean whether the first level can be unfolded
 * collapsed – Default: true
   > Boolean whether the first level items are already expanded after loading
-* useFrontMatter - Default: false
+* useFrontmatter - Default: false
   > Boolean whether use front-matter for title of items
 
 **Tips：** If you want to ignore a file, name the `.md` file with an underscore ( `_` ).

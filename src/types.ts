@@ -3,7 +3,7 @@ export interface Options {
   contentDirs?: string[] | ContentDir[] | null;
   collapsible?: boolean;
   collapsed?: boolean;
-  useFrontMatter?: boolean;
+  useFrontmatter?: boolean;
 }
 
 export interface ContentDir {
