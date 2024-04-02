@@ -3,4 +3,5 @@ export interface Options {
   contentDirs?: string[] | null;
   collapsible?: boolean;
   collapsed?: boolean;
+  useFrontMatter?: boolean;
 }

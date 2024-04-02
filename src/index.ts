@@ -2,6 +2,7 @@ import { Options } from "./types";
 
 import fs from "fs";
 import path from "path";
+import frontMatter from "front-matter";
 
 function getSidebarItems(dir: string[], currentRoot: string | undefined, root: string | undefined, options: Options): object[] {
 	return dir
@@ -18,8 +19,17 @@ function getSidebarItems(dir: string[], currentRoot: string | undefined, root: s
           items
         } : null!;
       } else if (e.endsWith('.md') && e[0] !== '_') {
+        let title: string | undefined;
+
+        if (options.useFrontMatter) {
+          const fm = frontMatter<{title: string}>(fs.readFileSync(path.resolve(currentRoot ?? '/', e), {encoding: 'utf-8'}));
+          if (fm) {
+            title = fm.attributes.title;
+          }
+        }
+
         return {
-          text: ((e.charAt(0).toUpperCase() + e.slice(1)).slice(0, -3)).replaceAll('-', ' '),
+          text: title || ((e.charAt(0).toUpperCase() + e.slice(1)).slice(0, -3)).replaceAll('-', ' '),
           link: childDir.replace(root ?? '', '')
         };
       }
@@ -33,6 +43,7 @@ export function getSidebar(options: Options = {}) {
   options.contentDirs = options?.contentDirs?.length ? options.contentDirs : ['/'];
   options.collapsible = options?.collapsible ?? true;
   options.collapsed = options?.collapsed ?? true;
+  options.useFrontMatter = options?.useFrontMatter ?? false;
 
 	options.contentRoot = path.join(process.cwd(), options.contentRoot)
 
