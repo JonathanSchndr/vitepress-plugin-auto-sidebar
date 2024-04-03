@@ -1,7 +1,7 @@
 {
   "name": "vitepress-plugin-auto-sidebar",
   "repository": "git://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar.git",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate the VitePress sidebar through the folder structure.",
   "types": "./dist/types/src/index.d.ts",
   "files": [

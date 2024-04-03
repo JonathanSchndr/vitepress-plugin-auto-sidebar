@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.2.0
+
+* Add `useFrontmatter` option to extract titles (by @nandenjin)
+* Accept type `ContentDir` for `options.contentDir` to set custom titles (by @nandenjin)
+
 ## v1.1.0
 
 * Ignore the underscore file (by @ZhongxuYang)
