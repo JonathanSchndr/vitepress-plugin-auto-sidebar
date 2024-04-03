@@ -14,9 +14,16 @@ export default defineConfig({
     ],
     sidebar: getSidebar({
       contentRoot: '/docs',
-      contentDirs: ['team'],
-      collapsible: true,
+      contentDirs: [
+        'team', // Just a path for directory
+        {
+          path: 'project',
+          title: 'About Project' // Customize title
+        }
+      ],
+      collapsible: false,
       collapsed: true,
+      useFrontmatter: true
     }) as any,
   },
 });
