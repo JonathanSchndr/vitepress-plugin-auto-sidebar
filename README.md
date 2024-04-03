@@ -48,7 +48,7 @@ export default {
 * useFrontmatter - Default: false
   > Boolean whether use front-matter for title of items
 
-**Tips：** If you want to ignore a file, name the `.md` file with an underscore ( `_` ).
+**Tips:** If you want to ignore a file, name the `.md` file with an underscore (`_`).
 
 
 ## License
