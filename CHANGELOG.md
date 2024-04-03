@@ -2,6 +2,7 @@
 
 ## v1.2.0
 
+* update dependencies
 * Add `useFrontmatter` option to extract titles (by @nandenjin)
 * Accept type `ContentDir` for `options.contentDir` to set custom titles (by @nandenjin)
 

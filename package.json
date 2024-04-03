@@ -7,12 +7,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vitepress-plugin-auto-sidebar.umd.js",
-  "module": "./dist/vitepress-plugin-auto-sidebar.es.mjs",
+  "type": "module",
+  "main": "./dist/vitepress-plugin-auto-sidebar.umd.cjs",
+  "module": "./dist/vitepress-plugin-auto-sidebar.js",
   "exports": {
     ".": {
-      "import": "./dist/vitepress-plugin-auto-sidebar.es.mjs",
-      "require": "./dist/vitepress-plugin-auto-sidebar.umd.js"
+      "import": "./dist/vitepress-plugin-auto-sidebar.js",
+      "require": "./dist/vitepress-plugin-auto-sidebar.umd.cjs"
     }
   },
   "scripts": {
@@ -20,7 +21,7 @@
     "postbuild": "vue-tsc --emitDeclarationOnly"
   },
   "engines": {
-    "node": "^14.13.1 || ^16.7.0 || >=18"
+    "node": ">=18"
   },
   "keywords": [
     "vitepress",
@@ -34,9 +35,9 @@
   },
   "homepage": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar#readme",
   "devDependencies": {
-    "@types/node": "^18.16.16",
-    "vite": "^4.3.9",
-    "vue-tsc": "^1.6.5"
+    "@types/node": "^20.12.3",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.0.7"
   },
   "dependencies": {
     "front-matter": "^4.0.2"
