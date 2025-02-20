@@ -1,9 +1,11 @@
-name: Release
+name: Release & Publish
 
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
   create-release:
