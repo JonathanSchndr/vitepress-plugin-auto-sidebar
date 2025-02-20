@@ -3,7 +3,7 @@ name: Release Please
 on:
   push:
     branches:
-      - master # Deactivate, change to master then
+      - main
   workflow_call:
   workflow_dispatch:
 
