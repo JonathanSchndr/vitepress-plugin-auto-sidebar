@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.3.3](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.2...v1.3.3) (2025-02-20)
+
+
+### Bug Fixes
+
+* update release workflow to use latest action versions and remove deprecated steps ([80e1164](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/80e11641e796a269a6332a60b644d38b14e15d33))
+
 ## [1.3.2](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.1...v1.3.2) (2025-02-20)
 
 
