@@ -1,4 +1,4 @@
-name: Release & Publish
+name: Publish
 
 on:
   push:
@@ -8,18 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  create-release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
   publish-pnpm:
     name: Publish to NPM (using pnpm)
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'JonathanSchndr' }}
-    needs: create-release
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
