@@ -18,11 +18,13 @@ jobs:
   publish-pnpm:
     name: Publish to NPM (using pnpm)
     runs-on: ubuntu-latest
-    # Skip this step in forks
     if: ${{ github.repository_owner == 'JonathanSchndr' }}
+    needs: create-release
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -36,7 +38,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile && pnpm run build # --frozen-lockfile ensures consistent installs
+        run: pnpm install --frozen-lockfile && pnpm run build
 
       - name: Publish packages to NPM
         env:
