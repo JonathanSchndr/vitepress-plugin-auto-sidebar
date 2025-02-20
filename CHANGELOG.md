@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [1.3.2](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.1...v1.3.2) (2025-02-20)
+
+
+### Features
+
+* enhance release workflow with publish options and trigger events ([2619834](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/2619834e008441facdc196a162e237fab8fdeedc))
+
+
+### Miscellaneous Chores
+
+* release 1.3.2 ([9c306bb](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/9c306bbf9d23ecc0a37f08848220364ddb06a2d7))
+
 ## [1.3.1](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.0...v1.3.1) (2025-02-20)
 
 
