@@ -53,7 +53,7 @@ export default {
 
 ## License
 
-Copyright (c) 2022 Jonathan Schneider
+Copyright (c) 2025 Jonathan Schneider
 [MIT License](./LICENSE)
 
 <!-- Badges -->
