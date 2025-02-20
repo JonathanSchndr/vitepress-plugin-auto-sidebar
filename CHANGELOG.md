@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [1.3.5](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.4...v1.3.5) (2025-02-20)
+
+
+### Bug Fixes
+
+* rename release.yml to publish.yml and update workflow steps ([4b377ac](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/4b377ac314f40aed999a7a536585d294d1490565))
+* update copyright year in README.md ([f116c6d](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/f116c6d312350927fedce1cd00208e81fe1a5dc4))
+
 ## [1.3.4](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.3...v1.3.4) (2025-02-20)
 
 
