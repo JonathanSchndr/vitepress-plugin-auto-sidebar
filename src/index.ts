@@ -32,7 +32,7 @@ function getSidebarItems(dir: (string | ContentDir)[], currentRoot: string | und
         } : null!;
       } else if (e.endsWith('.md') && e[0] !== '_') {
         let title: string | undefined;
-        
+
         if (options.useFrontmatter) {
           const fm = frontMatter<{title: string}>(fs.readFileSync(path.resolve(currentRoot ?? '/', e), {encoding: 'utf-8'}));
           if (fm) {
@@ -48,7 +48,7 @@ function getSidebarItems(dir: (string | ContentDir)[], currentRoot: string | und
       return null!;
     })
     .filter(i => !!i);
-};
+}
 
 export function getSidebar(options: Options = {}) {
   options.contentRoot = options?.contentRoot ?? '/';

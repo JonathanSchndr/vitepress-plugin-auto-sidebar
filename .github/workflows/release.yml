@@ -25,8 +25,8 @@ jobs:
           draft: false
           prerelease: false
 
-  publish-npm:
-    name: Publish to NPM
+  publish-pnpm:
+    name: Publish to NPM (using pnpm)
     runs-on: ubuntu-latest
     # Skip this step in forks
     if: ${{ github.repository_owner == 'JonathanSchndr' }}
@@ -37,14 +37,20 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 22
+          cache: 'pnpm' # Caching pnpm modules
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest # or specify a version
 
       - name: Install dependencies
-        run: npm install && npm run build
+        run: pnpm install --frozen-lockfile && pnpm run build # --frozen-lockfile ensures consistent installs
 
       - name: Publish packages to NPM
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
-          npm -r publish --access=public --no-git-checks
+          pnpm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
+          pnpm publish --access public --no-git-checks

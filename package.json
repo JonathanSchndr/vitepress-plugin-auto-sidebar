@@ -35,9 +35,9 @@
   },
   "homepage": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar#readme",
   "devDependencies": {
-    "@types/node": "^20.12.3",
-    "vite": "^5.2.8",
-    "vue-tsc": "^2.0.7"
+    "@types/node": "^22.13.4",
+    "vite": "^6.1.1",
+    "vue-tsc": "^2.2.2"
   },
   "dependencies": {
     "front-matter": "^4.0.2"
