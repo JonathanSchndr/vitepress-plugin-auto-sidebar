@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.3.1](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.0...v1.3.1) (2025-02-20)
+
+
+### Miscellaneous Chores
+
+* release 1.3.1 ([f1afdee](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/f1afdeee5fc309c6298636bfe6278ebc3faa7c91))
+
 ## [1.3.0](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.2.0...v1.3.0) (2025-02-20)
 
 
