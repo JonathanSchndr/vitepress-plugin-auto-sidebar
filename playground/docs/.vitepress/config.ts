@@ -1,29 +1,32 @@
-import fs from "fs";
-import path from "path";
-
 import { defineConfig } from 'vitepress';
 import { getSidebar } from 'vitepress-plugin-auto-sidebar';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'VitePress',
-  description: 'Vite & Vue powered static site generator.',
+  title: 'VitePress Plugin Auto Sidebar',
+  description: 'Playground for testing vitepress-plugin-auto-sidebar',
   themeConfig: {
     nav: [
+      { text: 'Home', link: '/' },
       { text: 'Example', link: '/example' },
     ],
     sidebar: getSidebar({
-      contentRoot: '/docs',
+      contentRoot: resolve(__dirname, '../'),
       contentDirs: [
-        'team', // Just a path for directory
+        'team',
         {
           path: 'project',
-          title: 'About Project' // Customize title
-        }
+          title: 'About Project',
+        },
       ],
-      collapsible: false,
-      collapsed: true,
-      useFrontmatter: true
-    }) as any,
+      collapsible: true,
+      collapsed: false,
+      useFrontmatter: true,
+    }),
   },
 });

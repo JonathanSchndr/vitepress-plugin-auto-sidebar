@@ -16,9 +16,20 @@
       "require": "./dist/vitepress-plugin-auto-sidebar.umd.cjs"
     }
   },
+  "packageManager": "pnpm@10.22.0",
   "scripts": {
     "build": "vite build",
-    "postbuild": "vue-tsc --emitDeclarationOnly"
+    "postbuild": "vue-tsc --emitDeclarationOnly",
+    "lint": "oxlint src",
+    "lint:fix": "oxlint src --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm run build && pnpm run test",
+    "typecheck": "vue-tsc --noEmit"
   },
   "engines": {
     "node": ">=18"
@@ -35,9 +46,13 @@
   },
   "homepage": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar#readme",
   "devDependencies": {
-    "@types/node": "^22.13.4",
-    "vite": "^6.1.1",
-    "vue-tsc": "^2.2.2"
+    "@types/node": "^24.10.1",
+    "@vitest/ui": "^4.0.10",
+    "oxlint": "^1.29.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.2.2",
+    "vitest": "^4.0.10",
+    "vue-tsc": "^3.1.4"
   },
   "dependencies": {
     "front-matter": "^4.0.2"
