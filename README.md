@@ -18,7 +18,7 @@
 - 🎨 Customizable directory titles
 - 📝 Frontmatter title support
 - 🔄 Collapsible sidebar sections
-- 📦 Small library with zero dependencies (except frontmatter parsing)
+- 📦 Small library with minimal dependencies (only gray-matter for frontmatter parsing)
 - 🔒 Full TypeScript support with type definitions
 - ⚡ Fast and efficient file system operations
 - 🛡️ Built-in error handling and validation

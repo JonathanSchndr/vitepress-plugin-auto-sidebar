@@ -2,7 +2,7 @@ import { ContentDir, Options, SidebarItem } from './types';
 
 import fs from 'fs';
 import path from 'path';
-import frontMatter from 'front-matter';
+import matter from 'gray-matter';
 
 const MD_EXTENSION = '.md';
 const IGNORE_PREFIX = '_';
@@ -52,8 +52,8 @@ function safeStatSync(filePath: string): fs.Stats | null {
 function extractFrontmatterTitle(filePath: string): string | undefined {
   try {
     const content = fs.readFileSync(filePath, { encoding: 'utf-8' });
-    const fm = frontMatter<{ title?: string }>(content);
-    return fm.attributes?.title;
+    const fm = matter(content);
+    return fm.data?.title;
   } catch (error) {
     console.warn(
       `[vitepress-plugin-auto-sidebar] Cannot read frontmatter from: ${filePath}`,
