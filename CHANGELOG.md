@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## [1.4.0](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.4...v1.4.0) (2025-11-19)
+
+
+### Features
+
+* Add GitHub Pages deployment for playground ([e9a13a8](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/e9a13a809045221d686bf172658142ad2acbca82))
+* Add Prettier, Oxlint, Vitest, and update workflows ([844b167](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/844b16722846dc0d11973b0cf5b229f75b8f4e73))
+
+
+### Bug Fixes
+
+* Remove explicit pnpm version from GitHub workflows ([abec1a0](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/abec1a0cf3773bae5098f4b3832b14d14978d3a9))
+* rename release.yml to publish.yml and update workflow steps ([4b377ac](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/4b377ac314f40aed999a7a536585d294d1490565))
+* update copyright year in README.md ([f116c6d](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/commit/f116c6d312350927fedce1cd00208e81fe1a5dc4))
+
 ## [1.3.4](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/compare/v1.3.3...v1.3.4) (2025-02-20)
 
 
