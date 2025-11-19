@@ -61,3 +61,29 @@ playground/
 - ✅ Frontmatter title support
 - ✅ Ignored files (underscore prefix)
 - ✅ Collapsible sections
+
+## GitHub Pages Deployment
+
+The playground is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+
+**Live Demo:** `https://jonathanschndr.github.io/vitepress-plugin-auto-sidebar/`
+
+### Setup GitHub Pages
+
+1. Go to your repository settings
+2. Navigate to **Pages** section
+3. Under **Build and deployment**:
+   - Source: `GitHub Actions`
+4. The workflow will automatically deploy on push to `main`
+
+### Manual Deployment
+
+Trigger a manual deployment:
+```bash
+gh workflow run deploy-playground.yaml
+```
+
+Or via GitHub UI:
+- Go to **Actions** tab
+- Select **Deploy Playground to GitHub Pages**
+- Click **Run workflow**

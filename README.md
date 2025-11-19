@@ -9,6 +9,7 @@
 > Generate the VitePress sidebar through the folder structure.
 
 - [✨ &nbsp;Release Notes](https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar/releases)
+- [🎮 &nbsp;Live Playground](https://jonathanschndr.github.io/vitepress-plugin-auto-sidebar/)
 
 ## Features
 

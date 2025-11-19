@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
+  base: '/vitepress-plugin-auto-sidebar/',
   lang: 'en-US',
   title: 'VitePress Plugin Auto Sidebar',
   description: 'Playground for testing vitepress-plugin-auto-sidebar',
