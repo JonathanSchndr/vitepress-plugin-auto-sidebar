@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
       name: "AutoSidebar"
     },
     rollupOptions: {
-      external: ["fs", "path"],
+      external: ['node:fs', 'node:path'],
     },
   },
 });
