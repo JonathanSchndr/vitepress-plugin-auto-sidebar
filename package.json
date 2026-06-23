@@ -46,13 +46,13 @@
   },
   "homepage": "https://github.com/JonathanSchndr/vitepress-plugin-auto-sidebar#readme",
   "devDependencies": {
-    "@types/node": "^24.10.1",
-    "@vitest/ui": "^4.0.10",
-    "oxlint": "^1.29.0",
-    "prettier": "^3.6.2",
-    "vite": "^7.2.2",
-    "vitest": "^4.0.10",
-    "vue-tsc": "^3.1.4"
+    "@types/node": "^26.0.0",
+    "@vitest/ui": "^4.1.9",
+    "oxlint": "^1.71.0",
+    "prettier": "^3.8.4",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.9",
+    "vue-tsc": "^3.3.5"
   },
   "dependencies": {
     "gray-matter": "^4.0.3"
